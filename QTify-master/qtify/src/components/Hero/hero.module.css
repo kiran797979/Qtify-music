@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background: #34C94B;
+  background-color: #34C94B !important;
 }
 
 .hero h1 {
