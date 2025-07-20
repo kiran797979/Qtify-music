@@ -80,9 +80,6 @@ Open your browser and go to [http://localhost:3000](http://localhost:3000) to ac
 
 If you would like to contribute to Qtify, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
 
 `BoddepallyVenkatesh06` and update the Spotify API key. Additionally, you might want to include information about additional dependencies, deployment instructions, and any other relevant details specific to your project.
