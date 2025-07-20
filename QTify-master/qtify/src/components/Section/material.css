@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+  .MuiButtonBase-root,
+  .MuiTab-root,
+  .MuiTab-textColorPrimary,
+  .Mui-selected,
+  .section_genreTab__5HKHF,
+  .css-uhtc8v,
+  .css-1cb6ucr-MuiButtonBase-root-MuiTab-root {
+    min-width: 60px !important;
+  }
+}

@@ -1,0 +1,156 @@
+.searchIcon {
+  cursor: pointer;
+}
+
+.searchResultWrapper {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.searchResult {
+  background-color: var(--black-color);
+  width: 30vw;
+  height: 455px;
+  position: relative;
+  left: -41px;
+  top: 15px;
+  border: 2px solid var(--primary-color);
+  overflow-y: auto;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.notFound {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+.albumWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.imgWrapper {
+  width: auto;
+  padding-right: 10px;
+}
+
+.albumImg {
+  width: 70px;
+  height: 70px;
+  object-fit: fill;
+  border: 5px solid #1d1d1d;
+  border-radius: 10px;
+}
+
+.albumHeadingWrapper {
+  width: 100%;
+}
+
+.searchResult::-webkit-scrollbar {
+  display: none;
+}
+
+.albumTitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.artists {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(216, 216, 216, 1);
+}
+
+.followersWrapper {
+  width: auto;
+  text-align: end;
+}
+
+.followers {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 575px) {
+  .searchResult {
+    width: 90vw;
+    height: 400px;
+    left: 0;
+  }
+  .albumImg {
+    width: 50px;
+    height: 50px;
+  }
+  .albumTitle {
+    font-size: 14px;
+  }
+  .artists {
+    font-size: 10px;
+  }
+  .followers {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .searchResult {
+    width: 70vw;
+    height: 455px;
+    left: 0;
+  }
+  .albumImg {
+    width: 60px;
+    height: 60px;
+  }
+  .albumTitle {
+    font-size: 15px;
+  }
+  .artists {
+    font-size: 11px;
+  }
+  .followers {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .searchResult {
+    width: 60vw;
+    height: 455px;
+    left: 0;
+  }
+  .albumImg {
+    width: 65px;
+    height: 65px;
+  }
+  .albumTitle {
+    font-size: 16px;
+  }
+  .artists {
+    font-size: 12px;
+  }
+  .followers {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .searchResult {
+    width: 35vw;
+  }
+  .albumImg {
+    width: 70px;
+    height: 70px;
+  }
+}

@@ -1,0 +1,164 @@
+.backButton {
+    cursor: pointer;
+    position: relative;
+    left: 4%;
+    margin: 30px 0px;
+}
+
+.albumImage {
+    width: 280px;
+    height: 320px;
+}
+
+.card {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    gap: 5%;
+    position: relative;
+    left: 5%;
+}
+
+.albumImage img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.albumDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.albumName {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.albumDescription,
+.duration {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.shuffle {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.library {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.shuffle::before {
+    content: url("../../assets/shuffle.svg");
+    padding-right: 15px;
+}
+
+.library::before {
+    content: url("../../assets/library.svg");
+    padding-right: 15px;
+}
+
+@media (max-width: 767px) {
+    .backButton {
+        margin: 15px 0;
+    }
+    .card {
+        flex-direction: column;
+        width: 80vw;
+        left: 0;
+        margin: 0 auto;
+        gap: 20px;
+    }
+    .albumImage {
+        width: 170px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .albumName {
+        font-size: 20px;
+    }
+    .albumDescription,
+    .duration {
+        font-size: 12px;
+    }
+    .dot {
+        width: 5px;
+        height: 5px;
+    }
+    .buttons {
+        gap: 10px;
+    }
+    .shuffle,
+    .library {
+        padding: 5px 10px;
+        font-size: 12px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    .card {
+        width: 75vw;
+    }
+    .albumImage {
+        width: 220px;
+        height: 260px;
+        margin: 0 auto;
+    }
+    .albumName {
+        font-size: 25px;
+    }
+    .albumDescription,
+    .duration {
+        font-size: 15px;
+    }
+    .buttons {
+        gap: 15px;
+    }
+    .shuffle,
+    .library {
+        padding: 5px 15px;
+        font-size: 12px;
+        align-items: center;
+    }
+}

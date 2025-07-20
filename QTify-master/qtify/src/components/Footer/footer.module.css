@@ -1,0 +1,23 @@
+.footerWrapper {
+  width: 100vw;
+  height: auto;
+  padding: 20px;
+}
+
+.imgCard {
+  display: flex;
+  align-items: center;
+}
+
+.img img {
+  width: 80px;
+  height: 80px;
+}
+
+.songName {
+  font-size: 16px;
+}
+
+.albumName {
+  font-size: 12px;
+}

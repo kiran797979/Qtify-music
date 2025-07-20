@@ -1,0 +1,89 @@
+/* Navbar */
+
+.nav {
+    width: 100vw;
+    height: 75px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+
+/* Logo */
+
+.img {
+    width: 70px;
+    height: 35px;
+}
+
+
+/* Search */
+
+.searchField input {
+    width: 30vw;
+    height: 45px;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+}
+
+.searchField div {
+    width: 45px;
+    height: 45px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--white-color);
+}
+
+.searchField div img {
+    margin: 12px 12px;
+}
+
+.searchField {
+    display: flex;
+}
+
+
+/* Button */
+
+.feedback {
+    border: none;
+    height: 45px;
+    border-radius: 12px;
+    padding: 10px 16px;
+    background-color: var(--black-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+/* Responsive for Mobile or Tab Screens */
+
+@media (max-width: 600px) {
+    .nav {
+        padding: 0 15px;
+    }
+    .img {
+        width: 60px;
+        height: 30px;
+    }
+    .searchField input {
+        padding: 5px;
+    }
+    .feedback {
+        width: 100px;
+        padding: 5px;
+        font-size: 10px;
+    }
+}

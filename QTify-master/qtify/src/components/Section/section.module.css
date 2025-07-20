@@ -1,0 +1,54 @@
+.sectionWrapper {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.showAll {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px 20px 0 20px;
+}
+
+.header p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cardsWrapper {
+  margin: 20px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.toggleText {
+  margin-right: 10px;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.genreTab {
+  color: var(--color-white) !important;
+}
+
+.genreTab.Mui-selected {
+  color: #34c94b !important;
+}
+
+@media (min-width: 800px) {
+  .cardsWrapper {
+    margin: 20px 40px 40px 40px;
+  }
+  .header {
+    margin: 0 20px;
+  }
+}

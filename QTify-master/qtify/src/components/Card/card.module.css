@@ -1,0 +1,40 @@
+.card {
+  width: 160px;
+  height: 235px;
+}
+
+.cardImg {
+  width: 160px;
+  height: 208px;
+  background-color: var(--white-color);
+  border-radius: 15px 15px 10px 10px;
+}
+
+.cardImg img {
+  width: inherit;
+  height: 170px;
+  object-fit: fill;
+  border-radius: 10px 10px 0 0;
+}
+
+.cardImg p {
+  display: inline-block;
+  height: 23px;
+  font-size: 10px;
+  background-color: var(--black-color);
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.card div h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 150px;
+  }
+}

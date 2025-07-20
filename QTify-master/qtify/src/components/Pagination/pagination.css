@@ -1,0 +1,24 @@
+.css-1fbx4dy-MuiButtonBase-root-MuiPaginationItem-root,
+.css-19pftoo {
+    color: var(--white-color) !important;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px !important;
+}
+
+@media (max-width: 600px) {
+    .pagination ul li button {
+        min-width: 25px !important;
+        height: 25px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .pagination ul li button {
+        min-width: 35px !important;
+        height: 35px !important;
+    }
+}

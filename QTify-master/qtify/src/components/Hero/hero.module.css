@@ -1,0 +1,36 @@
+.hero {
+  width: 100vw;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero h1 {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column-reverse;
+    height: 220px;
+    gap: 10px;
+  }
+  .hero img {
+    width: 130px;
+    height: 130px;
+  }
+  .hero h1 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+  .hero h1 {
+    font-size: 20px;
+  }
+  .hero div {
+    margin-left: 20px;
+  }
+}
